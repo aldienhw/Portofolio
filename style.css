@@ -1,0 +1,382 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    z-index: -1;
+}
+
+section#section1{
+    height: 100vh;
+    padding: 120px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+section#section1.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section#section2{
+    height: 100vh;
+    padding: 80px;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+section#section2.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section#section3{
+    height: 100vh;
+    padding: 80px;
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+section#section3.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+section#section4{
+    height: 100vh;
+    padding: 80px;
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+section#section4.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#section1{
+    color: wheat;
+    display: flex;
+    justify-content: space-around;
+}
+
+section div.section1 h1{
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    font-size: 350%;
+}
+
+#section1 a{
+    height: 50px;
+    width: 80px;
+    padding: 0 20px;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    border-radius: 10px;
+    background: linear-gradient(green,darkgreen);
+    color: wheat;
+    transition: box-shadow 0.3s ease, text-shadow 0.3s ease;
+}
+
+#section1 a:hover{
+    text-shadow: 0 0 10px #333;
+    cursor:pointer;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    color: #333;
+}
+
+#section1 p{
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    font-size: 200%;
+}
+
+.homepicture{
+    cursor: pointer;
+    border-radius: 10%;
+    border: 10px solid lightgray;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.homepicture:hover{
+    box-shadow: 0 0 30px lightgray;
+    transform: scale(1.1);
+}
+
+#section2 h1{
+    display: flex;
+    justify-content: center;
+    color: green;
+    border: 5px solid green;
+    font-size: 160%;
+    transition: color 0.5s ease-in, background-color 0.3s ease-in-out;
+}
+
+#section2 h1:hover{
+    cursor: pointer;
+    color: wheat;
+    background-color: green;
+}
+
+section div.section2 p{
+    margin-top: 30px;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    color: wheat;
+    font-size: 150%;
+}
+
+section div.section2{
+    justify-content: space-between;
+    display: flex;
+}
+
+.aboutpicture{
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 10px solid lightgray;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    
+.aboutpicture:hover{
+    box-shadow: 0 0 30px lightgray;
+    transform: scale(1.1);
+}
+
+#section3 h1{
+    font-size: 160%;
+    display: flex;
+    justify-content: center;
+    border: 5px solid green;
+    color: green;
+    transition: color 0.5s ease-in, background-color 0.3s ease-in-out;
+}
+
+#section3 h1:hover{
+    cursor: pointer;
+    color: wheat;
+    background-color: green;
+}
+
+#section3 div.section3{
+    display: flex;
+}
+
+#section3 div.section3 p {
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 10px;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    color: wheat;
+    font-size: 150%;
+}
+
+.skillpicture{
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 100%;
+    border: 10px solid lightgray;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    
+.skillpicture:hover{
+    box-shadow: 0 0 30px lightgray;
+    transform: scale(1.1);
+}
+
+.skillpicture2{
+    margin-top: 100px;
+    cursor: pointer;
+    border-radius: 100%;
+    border: 10px solid lightgray;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.skillpicture2:hover{
+    box-shadow: 0 0 30px lightgray;
+    transform: scale(1.1);
+}
+
+#section4 h1{
+    display: flex;
+    justify-content: center;
+    color: green;
+    border: 5px solid green;
+    font-size: 160%;
+    transition: color 0.5s ease-in, background-color 0.3s ease-in-out;
+}
+
+#section4 h1:hover{
+    cursor: pointer;
+    color: wheat;
+    background-color: green;
+}
+
+section div.section4 {
+    margin-top: 70px;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    color: wheat;
+    font-size: 150%;
+    display: flex;
+    justify-content: space-around;
+}
+
+section div.section4 div.school1{
+    text-align: center;    
+}
+
+section div.section4 div.school2{
+    text-align: center;
+}
+
+section div.section4 div.school3{
+    text-align: center;
+}
+
+.nusapicture{
+    cursor: pointer;
+    border-radius: 10%;
+    border: 10px solid lightgray;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+        
+.nusapicture:hover{
+    box-shadow: 0 0 30px lightgray;
+    transform: scale(1.1);
+}
+
+.bethesdapicture{
+    cursor: pointer;
+    border-radius: 10%;
+    border: 10px solid lightgray;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+        
+.bethesdapicture:hover{
+    box-shadow: 0 0 30px lightgray;
+    transform: scale(1.1);
+    }
+
+.letrispicture{
+    cursor: pointer;
+    border-radius: 10%;
+    border: 10px solid lightgray;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+        
+.letrispicture:hover{
+    box-shadow: 0 0 30px lightgray;
+    transform: scale(1.1);
+    }
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(#666,#333);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+nav div.navLinks{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav div.navLinks a{
+    height: 100%;
+    padding: 0 20px;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    background: linear-gradient(#666,#333);
+    text-shadow: 0 0 10px green;
+    color: lightgreen;
+    transition: color 0.7s ease, background-color 0.7s ease, text-shadow 0.7s ease;
+}
+
+nav div.medialink a {
+    padding: 0 10px;
+}
+
+nav div.medialink img[src="facebook.png"]{
+    border-radius: 100%;
+    transition: background-color 0.5s ease, box-shadow 0.6s ease;
+}
+
+nav div.medialink img[src="facebook.png"]:hover{
+    box-shadow: 0 0 10px lightgray;
+    background-color: white;
+}
+
+nav div.medialink img[src="Instagram.png"]{
+    border-radius: 100%;
+    transition: background-color 0.5s ease, box-shadow 0.6s ease;
+}
+
+nav div.medialink img[src="Instagram.png"]:hover{
+    box-shadow: 0 0 10px lightgray;
+    background-color: white;
+}
+
+nav div.medialink img[src="github.png"]{
+    border-radius: 100%;
+    transition: background-color 0.5s ease, box-shadow 0.6s ease;
+}
+
+nav div.medialink img[src="github.png"]:hover{
+    box-shadow: 0 0 10px lightgray;
+    background-color: white;
+}
+
+
+nav div.navLinks a:hover{
+    text-shadow: 0 0 10px white;
+    cursor:pointer;
+    color: white;
+    background: green;
+}
+
+.navlogo{
+    cursor:pointer;
+    background-color: white;
+    border-radius: 100%;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.navlogo:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+}
